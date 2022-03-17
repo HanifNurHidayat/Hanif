@@ -1,61 +1,220 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:text="Anak 1"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:background="#FFEB36"
-        android:textSize="30sp" />
-    <TextView
-        android:text="Anak 2"
-        android:textSize="30sp"
-        android:background="#29DF09"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"/>
-    <TextView
-        android:text="Anak 3"
-        android:textSize="30sp"
-        android:background="#03EDE5"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"/>
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:orientation="horizontal"
+    <View
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        android:layout_height="200dp"
+        android:background="@drawable/gradasi"/>
 
-    <TextView
-        android:text="Anak 4"
-        android:textSize="30sp"
-        android:background="#9906F4"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"/>
-    <TextView
-        android:text="Anak 5"
-        android:textSize="30sp"
-        android:background="#F1021E"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"/>
-    <TextView
-        android:text="Anak 6"
-        android:textSize="30sp"
-        android:background="#8A0110"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="210dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/garis1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="25dp"
+            android:gravity="center"
+            android:orientation="vertical">
 
 
 
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/background">
+
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="30dp"
+                    android:src="@drawable/lokasi" />
+
+                <TextView
+                    android:id="@+id/textimage1"
+                    android:layout_width="64dp"
+                    android:layout_height="23dp"
+                    android:layout_alignLeft="@+id/image1"
+                    android:layout_alignTop="@id/image1"
+                    android:layout_alignRight="@+id/image1"
+                    android:layout_alignBottom="@id/image1"
+                    android:layout_marginTop="90dp"
+                    android:gravity="center"
+                    android:text="Lokasi"
+                    android:textColor="#000000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/background">
+
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="30dp"
+                    android:src="@drawable/calendar" />
+
+                <TextView
+                    android:id="@+id/textimage1"
+                    android:layout_width="64dp"
+                    android:layout_height="23dp"
+                    android:layout_alignLeft="@+id/image1"
+                    android:layout_alignTop="@id/image1"
+                    android:layout_alignRight="@+id/image1"
+                    android:layout_alignBottom="@id/image1"
+                    android:layout_marginTop="90dp"
+                    android:gravity="center"
+                    android:text="Profile"
+                    android:textColor="#000000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/background">
+
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="30dp"
+                    android:src="@drawable/camera" />
+
+                <TextView
+                    android:id="@+id/textimage1"
+                    android:layout_width="64dp"
+                    android:layout_height="23dp"
+                    android:layout_alignLeft="@+id/image1"
+                    android:layout_alignTop="@id/image1"
+                    android:layout_alignRight="@+id/image1"
+                    android:layout_alignBottom="@id/image1"
+                    android:layout_marginTop="90dp"
+                    android:gravity="center"
+                    android:text="Exit"
+                    android:textColor="#000000" />
+            </RelativeLayout>
 
 
-</LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/garis2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/garis1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/background">
+
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:paddingTop="13dp"
+                    android:paddingBottom="30dp"
+                    android:src="@drawable/video" />
+
+                <TextView
+                    android:id="@+id/textimage1"
+                    android:layout_width="64dp"
+                    android:layout_height="23dp"
+                    android:layout_alignLeft="@+id/image1"
+                    android:layout_alignTop="@id/image1"
+                    android:layout_alignRight="@+id/image1"
+                    android:layout_alignBottom="@id/image1"
+                    android:layout_marginTop="90dp"
+                    android:gravity="center"
+                    android:text="Edit"
+                    android:textColor="#000000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/background">
+
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="30dp"
+                    android:src="@drawable/music" />
+
+                <TextView
+                    android:id="@+id/textimage1"
+                    android:layout_width="64dp"
+                    android:layout_height="23dp"
+                    android:layout_alignLeft="@+id/image1"
+                    android:layout_alignTop="@id/image1"
+                    android:layout_alignRight="@+id/image1"
+                    android:layout_alignBottom="@id/image1"
+                    android:layout_marginTop="90dp"
+                    android:gravity="center"
+                    android:text="Upload"
+                    android:textColor="#000000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/background">
+
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="30dp"
+                    android:src="@drawable/setting" />
+
+                <TextView
+                    android:id="@+id/textimage1"
+                    android:layout_width="64dp"
+                    android:layout_height="23dp"
+                    android:layout_alignLeft="@+id/image1"
+                    android:layout_alignTop="@id/image1"
+                    android:layout_alignRight="@+id/image1"
+                    android:layout_alignBottom="@id/image1"
+                    android:layout_marginTop="90dp"
+                    android:gravity="center"
+                    android:text="History"
+                    android:textColor="#000000" />
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>
+
+
+
+
