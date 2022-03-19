@@ -7,15 +7,16 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <View
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="@drawable/gradasi"/>
+        android:layout_height="198dp"
+        android:background="@drawable/gradasi" />
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="210dp"
+        android:layout_marginTop="100dp"
         android:gravity="center">
 
         <LinearLayout
@@ -80,7 +81,7 @@
                     android:layout_alignBottom="@id/image1"
                     android:layout_marginTop="90dp"
                     android:gravity="center"
-                    android:text="Profile"
+                    android:text="Kalender"
                     android:textColor="#000000" />
             </RelativeLayout>
 
@@ -108,7 +109,7 @@
                     android:layout_alignBottom="@id/image1"
                     android:layout_marginTop="90dp"
                     android:gravity="center"
-                    android:text="Exit"
+                    android:text="Camera"
                     android:textColor="#000000" />
             </RelativeLayout>
 
@@ -147,7 +148,7 @@
                     android:layout_alignBottom="@id/image1"
                     android:layout_marginTop="90dp"
                     android:gravity="center"
-                    android:text="Edit"
+                    android:text="Video"
                     android:textColor="#000000" />
             </RelativeLayout>
 
@@ -175,7 +176,7 @@
                     android:layout_alignBottom="@id/image1"
                     android:layout_marginTop="90dp"
                     android:gravity="center"
-                    android:text="Upload"
+                    android:text="Music"
                     android:textColor="#000000" />
             </RelativeLayout>
 
@@ -203,7 +204,7 @@
                     android:layout_alignBottom="@id/image1"
                     android:layout_marginTop="90dp"
                     android:gravity="center"
-                    android:text="History"
+                    android:text="Setting"
                     android:textColor="#000000" />
             </RelativeLayout>
 
